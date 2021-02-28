@@ -62,14 +62,8 @@ Key to Cardiff is a single scrollable website with 7 sections. The sections are:
 ### Home / About us
 The home section of Key to Cardiff is comprised of a navigation bar, a hero image, a dark mode toggler and finally a brief text section about Cardiff.
 
-### Time
-The Time section's use is to display activities that are available depending on the time of day you choose. If night is selected then the theme of the website changes and will display a darker theme and night photos in the photo carousel.
-
-### Location
-The location Section contains two locations, Cardiff and Cardiff bay. Once you pick a location it will display activities relevant to your location selection.
-
 ### Map
-The Map section contains information and locations of places in Cardiff organised via buttons. Once clicked the attractions will be displayed on a  map adjacent to the buttons.
+The Map section contains information and locations of places in Cardiff. A set of buttons are used to filter the results, the results are then desplayed on the map.
 
 ### Photo carousel
 The photo carousel will display photos of Cardiff and Cardiff bay. The photos displayed are also dependent on whether dark mode is activated or not.
