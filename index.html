@@ -23,7 +23,7 @@
         <div class="container-fluid">
             <div id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="#">Welcome</a>
+                <a href="#welcome">Welcome</a>
                 <a href="#">Location</a>
                 <a href="#">Attractions</a>
                 <a href="#">Gallery</a>
@@ -31,14 +31,37 @@
                 <a href="#">Contact Us</a>
             </div>
             <!-- All content inside this div is pushed by side nav once hamburger button is clicked -->
-            <div id="main">
+            <div id="main" class="nav-button">
                 <img class="nav-icon" src="assets/images/nav-icon.png" onclick="openNav()" alt="open nav">
                 <h1 class="logo">Key to Cardiff<span class="punctiuation">.</span></h1>
             </div>
         </div>
     </header>
     <section id="welcome">
-      
+        <div class="container card">
+            <div>
+                <h1>Welcome<span class="punctiuation">.</span></h1>
+            </div>
+
+            <div class="content-row">
+                <div class="col-lg-6 welcome-text">
+                    <p>
+                        You've found the Key to Cardiff! Home of all the best locations in Cardiff. Whether you're
+                        looking
+                        for attractions or activities, some entertainment or somewhere to eat, we have something for
+                        everyone. Lets make a start!
+                    </p>
+                    <div class="col-12 ">
+                        <a class="btn btn-primary" href="#location" role="button">Let's Start!</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 welcome-img">
+                    <img
+                        src="https://lh3.googleusercontent.com/UQIvhBWqjaydHDPwM3SyylQUpYz-Iey6oAdDvoHbcUuzbSoIkelsDkmizcECgv_bLszakklrA--VxTaJfXJOv5_wWCBVW8i-FNeBC75JpwJpxwIc7LfzKXZbQPUYqLcQ3-Y28xkNzw=w2400">
+                </div>
+
+            </div>
+        </div>
     </section>
     <section id="location">
 

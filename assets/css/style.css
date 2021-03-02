@@ -1,6 +1,15 @@
 /* ----------- General -----------*/
+
+html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
 body{
-    font-family: 'Quicksand', sans-serif;    
+    font-family: 'Quicksand', sans-serif;   
+    padding-top: 6rem;
 }
 h1, h2, h3, h4 {
     font-family: 'Montserrat', sans-serif;    
@@ -10,13 +19,38 @@ h1, h2, h3, h4 {
     color: #FF9000;
 }
 
-.card {
-    margin: 50px;
-    width: 100%vw;
-    height: 100vh;
-    background-color: #38AECC;
-    opacity: 0.8;
+.card{
+    min-width: 90vw;
+    min-height: 80vh;
+    background-color:#38AECCCC;
+    padding:25px;
+    margin-bottom: 25px;
 }
+.content-row{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+/*---------------------- Welcome Content ----------------------*/
+#welcome .content-row{
+flex-wrap: wrap-reverse;
+text-align: center;
+}
+
+#welcome img{
+      max-width: 100%;
+  height: auto;
+
+}
+
+#welcome a{
+margin-top: 25px;
+}
+
+
+
 /* ----------- Day Theme -----------*/
 .day-bg-image{
 background-image: url('https://lh3.googleusercontent.com/7-Ke2Y2ctTPyQX8hTHNICEh_nUK6z2xWgDHlJ2540-KarSdWKXc76sniInw79NX35Z5e9hraBGkKLWbcPgghLVlHtmdHFK1grK9TVfAhpbYOG51kYkkiZ6v07ZVWYtTEz4Ji0XZBjA=w2400');
@@ -35,9 +69,24 @@ background-size: cover;
 }
 
 /* ----------- Side Nav -----------*/
+.nav-button{
+    position: fixed;
+    top: 0;
+    z-index: 1; /* Stay on top */
+
+}
 .logo{
     padding-top: 6px; 
+    display: inline-block;
 }
+
+@media screen and (max-width: 425px) {
+    .logo{
+        font-size: 28px;
+        padding-top:15px;
+    }
+}
+
 /* The side navigation menu */
 .sidenav {
   height: 100%; /* 100% Full-height */
