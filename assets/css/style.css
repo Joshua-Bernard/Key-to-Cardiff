@@ -14,41 +14,6 @@ body{
 h1, h2, h3, h4 {
     font-family: 'Montserrat', sans-serif;    
 }
-/*---------------------- Main Content/General ----------------------*/
-.punctiuation {
-    color: #FF9000;
-}
-
-.card{
-    min-width: 90vw;
-    min-height: 80vh;
-    background-color:#38AECCCC;
-    padding:25px;
-    margin-bottom: 25px;
-}
-.content-row{
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
-}
-/*---------------------- Welcome Content ----------------------*/
-#welcome .content-row{
-flex-wrap: wrap-reverse;
-text-align: center;
-}
-
-#welcome img{
-      max-width: 100%;
-  height: auto;
-
-}
-
-#welcome a{
-margin-top: 25px;
-}
-
 
 
 /* ----------- Day Theme -----------*/
@@ -142,4 +107,93 @@ float: left;
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+}
+/*---------------------- Main Content/General ----------------------*/
+.punctiuation {
+    color: #FF9000;
+}
+
+.card-bg{
+    min-width: 90vw;
+    min-height: 90vh;
+    background-color:#38AECCCC;
+    padding:25px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 25px;
+   
+
+}
+
+.content-row {
+    flex: 0 1 100%;
+    flex-flow: row wrap;
+    display: flex;
+    text-align: center;
+
+}
+.section-header{
+     flex: 0 1 100%;
+     align-self: flex-start;
+     text-align: left;
+}
+
+
+/*---------------------- Welcome Content ----------------------*/
+
+.welcome-text{
+    flex: 0 1 50%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.welcome-text p{
+       flex: 0 1 100%; 
+}
+
+.welcome-img{
+    flex: 0 1 50%;
+}
+
+#welcome a{
+margin-top: 25px;
+}
+/*---------------------- Attractions Content ----------------------*/
+.key{
+    text-align: center;
+    flex: 0 1 40%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.key-row{
+    flex: 0 1 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.key-header {
+    flex: 0 1 100%;
+}
+
+.key-icons {
+    flex: 0 1 100%;
+}
+
+#map{
+    flex: 0 1 60%;
+    border: 2px solid #FF9000;
+}
+.key-icon{
+     height: 60px;
+    width: 60px;
+    font-size:25px ;
+    background-color: transparent;
+    color: #FF9000;
+    border-radius: 50%;
+    border: 2px solid #FF9000;
 }

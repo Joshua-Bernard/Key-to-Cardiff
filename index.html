@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Key to Cardiff</title>
+    <title>Key to cardiff</title>
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <!-- Font Awsome -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Quicksand&display=swap" rel="stylesheet">
@@ -24,11 +25,11 @@
             <div id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <a href="#welcome">Welcome</a>
-                <a href="#">Location</a>
-                <a href="#">Attractions</a>
-                <a href="#">Gallery</a>
-                <a href="#">Events</a>
-                <a href="#">Contact Us</a>
+                <a href="#location">Location</a>
+                <a href="#attractions">Attractions</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#events">Events</a>
+                <a href="#contact">Contact Us</a>
             </div>
             <!-- All content inside this div is pushed by side nav once hamburger button is clicked -->
             <div id="main" class="nav-button">
@@ -38,24 +39,24 @@
         </div>
     </header>
     <section id="welcome">
-        <div class="container card">
-            <div>
+        <div class="card-bg">
+            <div class="section-header">
                 <h1>Welcome<span class="punctiuation">.</span></h1>
             </div>
 
             <div class="content-row">
-                <div class="col-lg-6 welcome-text">
+                <div class="welcome-text">
                     <p>
                         You've found the Key to Cardiff! Home of all the best locations in Cardiff. Whether you're
                         looking
                         for attractions or activities, some entertainment or somewhere to eat, we have something for
                         everyone. Lets make a start!
                     </p>
-                    <div class="col-12 ">
+                    <div class="">
                         <a class="btn btn-primary" href="#location" role="button">Let's Start!</a>
                     </div>
                 </div>
-                <div class="col-lg-6 welcome-img">
+                <div class="welcome-img">
                     <img
                         src="https://lh3.googleusercontent.com/UQIvhBWqjaydHDPwM3SyylQUpYz-Iey6oAdDvoHbcUuzbSoIkelsDkmizcECgv_bLszakklrA--VxTaJfXJOv5_wWCBVW8i-FNeBC75JpwJpxwIc7LfzKXZbQPUYqLcQ3-Y28xkNzw=w2400">
                 </div>
@@ -64,17 +65,104 @@
         </div>
     </section>
     <section id="location">
-
+        <div class="card-bg">
+            <div class="section-header">
+                <h1>location<span class="punctiuation">.</span></h1>
+            </div>
+        </div>
     </section>
     <section id="attractions">
+        <div class="card-bg">
+            <div class="section-header">
+                <h1>Attractions<span class="punctiuation">.</span></h1>
+            </div>
+            <div class="content-row">
+                <div class="key">
+                    <div class="key-header">
+                        <h3>Key<span class="punctiuation">.</span></h3>
+                    </div>
+                    <div class="key-row">
+                        <div class="key-group">
+                            <button class="key-icon" type="button" name="key-button1" id="key-button1">
+                                <i class="fas fa-coffee"></i>
+                            </button>
+                            <h4>Cafes</h4>
+                        </div>
+                        <div class="key-group">
+                            <button class="key-icon" type="button" name="key-button2" id="key-button2">
+                                <i class="fas fa-landmark"></i>
+                            </button>
+                            <h4>Attractions</h4>
+                        </div>
+                        <div class="key-group">
+                            <button class="key-icon" type="button" name="key-button3" id="key-button3">
+                                <i class="fas fa-dice"></i>
+                            </button>
+                            <h4>Activities</h4>
+                        </div>
+                    </div>
+                    <div class="key-header">
+                        <h3>Location<span class="punctiuation">.</span></h3>
+                    </div>
+                    <div class="key-row">
+                        <div class="key-group">
+                            <button class="key-icon" type="button" name="location-button1" id="location-button1">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </button>
+                            <h4>Cardiff Central</h4>
+                        </div>
+                        <div class="key-group">
+                            <button class="key-icon" type="button" name="location-button2" id="location-button2">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </button>
+                            <h4>Cardiff Bay</h4>
+                        </div>
+                    </div>
+                    <div class="key-header">
+                        <h3>Time Of Day<span class="punctiuation">.</span></h3>
+                    </div>
+                    <div class="key-row">
+                        <div class="key-group" key-icons row>
+                            <button class="key-icon" type="button" name="time-button1" id="time-button1">
+                                <i class="far fa-sun"></i>
+                            </button>
+                            <h4>Day</h4>
+                        </div>
+                        <div class="key-group">
+                            <button class="key-icon" type="button" name="time-button2" id="time-button2">
+                                <i class="far fa-moon"></i>
+                            </button>
+                            <h4>Night</h4>
+                        </div>
+
+                    </div>
+                </div>
+                <div id="map">
+                    fefef
+                </div>
+            </div>
+        </div>
     </section>
     <section id="gallery">
-
+        <div class="card-bg">
+            <div class="section-header">
+                <h1>Gallery<span class="punctiuation">.</span></h1>
+            </div>
+        </div>
     </section>
     <section id="events">
-
+        <div class="card-bg">
+            <div class="section-header">
+                <h1>Events<span class="punctiuation">.</span></h1>
+            </div>
+        </div>
     </section>
     <section id="contact">
+        <div class="card-bg">
+            <div class="section-header">
+                <h1>Contact Us<span class="punctiuation">.</span></h1>
+            </div>
+        </div>
     </section>
     <!-- External Javascript files -->
     <script src="assets/scripts/script.js"></script>
