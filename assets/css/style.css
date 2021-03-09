@@ -197,3 +197,13 @@ margin-top: 25px;
     border-radius: 50%;
     border: 2px solid #FF9000;
 }
+
+.key-icon-active {
+    height: 60px;
+    width: 60px;
+    font-size: 25px;
+    background-color: #FF9000;
+    color: #2E5090;
+    border-radius: 50%;
+    border: 2px solid #FF9000;
+}

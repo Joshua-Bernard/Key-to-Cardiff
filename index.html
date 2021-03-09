@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Key to cardiff</title>
+    <title>Key to Cardiff</title>
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -79,29 +79,6 @@
             <div class="content-row">
                 <div class="key">
                     <div class="key-header">
-                        <h3>Key<span class="punctiuation">.</span></h3>
-                    </div>
-                    <div class="key-row">
-                        <div class="key-group">
-                            <button class="key-icon" type="button" name="key-button1" id="key-button1">
-                                <i class="fas fa-coffee"></i>
-                            </button>
-                            <h4>Cafes</h4>
-                        </div>
-                        <div class="key-group">
-                            <button class="key-icon" type="button" name="key-button2" id="key-button2">
-                                <i class="fas fa-landmark"></i>
-                            </button>
-                            <h4>Attractions</h4>
-                        </div>
-                        <div class="key-group">
-                            <button class="key-icon" type="button" name="key-button3" id="key-button3">
-                                <i class="fas fa-dice"></i>
-                            </button>
-                            <h4>Activities</h4>
-                        </div>
-                    </div>
-                    <div class="key-header">
                         <h3>Location<span class="punctiuation">.</span></h3>
                     </div>
                     <div class="key-row">
@@ -136,9 +113,73 @@
                         </div>
 
                     </div>
+                    <div class="key-header">
+                        <h3>Key<span class="punctiuation">.</span></h3>
+                    </div>
+                    <div class="key-row suggestions" id="c-center-day">
+                        <div class="key-group">
+                            <button class="key-icon" type="button" name="key-button1" id="key-button1">
+                                <i class="fas fa-coffee"></i>
+                            </button>
+                            <h4>Cafes</h4>
+                        </div>
+                        <div class="key-group">
+                            <button class="key-icon" type="button" name="key-button2" id="key-button2">
+                                <i class="fas fa-landmark"></i>
+                            </button>
+                            <h4>Attractions</h4>
+                        </div>
+                        <div class="key-group">
+                            <button class="key-icon" type="button" name="key-button3" id="key-button3">
+                                <i class="fas fa-dice"></i>
+                            </button>
+                            <h4>Activities</h4>
+                        </div>
+                    </div>
+                    <div class="key-row suggestions" id="c-center-night">
+                        <div class="key-group">
+                            <button class="key-icon" type="button" name="key-button4" id="key-button4">
+                                <i class="fas fa-utensils"></i>
+                            </button>
+                            <h4>Restaurants</h4>
+                        </div>
+                        <div class="key-group">
+                            <button class="key-icon" type="button" name="key-button5" id="key-button5">
+                                <i class="fas fa-cocktail"></i>
+                            </button>
+                            <h4>Bars</h4>
+                        </div>
+                    </div>
+                    <div class="key-row suggestions" id="c-bay-day">
+                        <div class="key-group">
+                            <button class="key-icon" type="button" name="key-button6" id="key-button6">
+                                <i class="fas fa-coffee"></i>
+                            </button>
+                            <h4>Cafes</h4>
+                        </div>
+                        <div class="key-group">
+                            <button class="key-icon" type="button" name="key-button7" id="key-button7">
+                                <i class="fas fa-landmark"></i>
+                            </button>
+                            <h4>Activities / Attractions</h4>
+                        </div>
+                    </div>
+                    <div class="key-row suggestions" id="c-bay-night">
+                        <div class="key-group">
+                            <button class="key-icon" type="button" name="key-button8" id="key-button8">
+                                <i class="fas fa-utensils"></i>
+                            </button>
+                            <h4>Restaurants</h4>
+                        </div>
+                        <div class="key-group">
+                            <button class="key-icon" type="button" name="key-button9" id="key-button9">
+                                <i class="fas fa-cocktail"></i>
+                            </button>
+                            <h4>Bars</h4>
+                        </div>
+                    </div>
                 </div>
                 <div id="map">
-                    fefef
                 </div>
             </div>
         </div>
@@ -164,8 +205,14 @@
             </div>
         </div>
     </section>
-    <!-- External Javascript files -->
+    <!-- Google Maps API-->
+    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9PEnrKO1ipmX1ru0mquVxW2QOfX7Lj0U&callback=initMap"></script>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- External Javascript script -->
     <script src="assets/scripts/script.js"></script>
+    <!-- External Javascript Maps -->
+    <script src="assets/scripts/maps.js"></script>
 </body>
 
 </html>
