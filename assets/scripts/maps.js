@@ -68,37 +68,37 @@ function initMap() {
         clearMarkers();
         showMarkers(cCenterNightRestarants);
         map.setCenter({ lat: 51.484616839789784, lng: -3.1730485280668694 });
-        map.setZoom(12);
+        map.setZoom(15);
     });
     $("#key-button5").on("click", function () {
         clearMarkers();
         showMarkers(cCenterNightBars);
         map.setCenter({ lat: 51.484616839789784, lng: -3.1730485280668694 });
-        map.setZoom(12);
+        map.setZoom(15);
     });
     $("#key-button6").on("click", function () {
         clearMarkers();
         showMarkers(cBayDayCafes);
         map.setCenter({ lat: 51.45436859069253, lng: -3.1693038766866364 });
-        map.setZoom(12);
+        map.setZoom(14);
     });
     $("#key-button7").on("click", function () {
         clearMarkers();
         showMarkers(cBayDayActivitesAttractions);
         map.setCenter({ lat: 51.45436859069253, lng: -3.1693038766866364 });
-        map.setZoom(12);
+        map.setZoom(14);
     });
     $("#key-button8").on("click", function () {
         clearMarkers();
         showMarkers(cBayNightRestaurants);
         map.setCenter({ lat: 51.45436859069253, lng: -3.1693038766866364 });
-        map.setZoom(12);
+        map.setZoom(14);
     });
     $("#key-button9").on("click", function () {
         clearMarkers();
         showMarkers(cBayNightBars);
         map.setCenter({ lat: 51.45436859069253, lng: -3.1693038766866364 });
-        map.setZoom(12);
+        map.setZoom(14);
     });
 
     // Button click function to center map on location options
@@ -368,10 +368,6 @@ function initMap() {
             content: "<h4>Signor Valentino</h4><p>Contemporary Italian restaurant with sun-deck, plus sweeping bays views and funky designer chairs.</p>"
         },
         {
-            location: { lat: 51.48513362885288, lng: -3.175524742507389 },
-            content: "<h4>Park House Restaurant & Wine Bar</h4><p>Set in an oak-panelled 19th-century mansion, this elegant restaurant serves British gastro-cuisine.</p>"
-        },
-        {
             location: { lat: 51.46343970197767, lng: -3.164963378504479 },
             content: "<h4>Bellini's</h4><p>Family-friendly Italian restaurant with modern decor, open-plan kitchen and harbourside seating.</p>"
         },
@@ -413,10 +409,6 @@ function initMap() {
         {
             location: { lat: 51.46367653974864, lng: -3.164716766180023 },
             content: "<h4>Cote Brasserie - Cardiff Bay</h4><p>Modern, all-day French brasserie chain, serving regional specialities and traditional classics.</p>"
-        },
-        {
-            location: { lat: 51.48078780113171, lng: -3.1758372075900247 },
-            content: "<h4>Cosy Club</h4><p>Bright, spacious, open-plan pub with mismatched furniture and an international, all-day menu.</p>"
         },
         {
             location: { lat: 51.460388328991655, lng: -3.1671223778769395 },
@@ -499,10 +491,6 @@ function initMap() {
         {
             location: { lat: 51.44445503049227, lng: -3.1732114578481405 },
             content: "<h4>The Galley</h4><p>Contemporary bar and restaurant overlooking the docks and serving British dishes.</p>"
-        },
-        {
-            location: { lat: 51.49425270808601, lng: -3.149873949269651 },
-            content: "<h4>TeamSport Go Karting Cardiff</h4><p>State-of-the-art karting track with flyover and electronic timing.</p>"
         },
     ];
 } 
