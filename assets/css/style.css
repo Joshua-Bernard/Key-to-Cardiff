@@ -303,3 +303,30 @@ margin-top: 25px;
 .fade:not(.show) {
     opacity: 1;
 }
+
+/*---------------------- Events Content ----------------------*/
+
+.event-card {
+    flex: 0 1 40%;
+    display: flex;
+    margin: 8px;
+    background-color: #2E509099;
+    padding: 10px;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.event-card img{
+    flex: 0 1 100%;
+    max-width: 40vw;
+}
+ 
+.event-text{
+    flex: 0 1 100%;
+}
+.event-url{
+    color: #FF9000;
+}
+ 
+#event-container {
+    justify-content: space-evenly;
+}
