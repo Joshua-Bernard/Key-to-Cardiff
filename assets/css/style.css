@@ -17,8 +17,8 @@ body{
 h1, h2, h3, h4 {
     font-family: 'Montserrat', sans-serif;    
 }
+/*---------------------- Day Theme ----------------------*/
 
-/* ----------- Day Theme -----------*/
 .day-bg-image{
     background-image: url('https://lh3.googleusercontent.com/7-Ke2Y2ctTPyQX8hTHNICEh_nUK6z2xWgDHlJ2540-KarSdWKXc76sniInw79NX35Z5e9hraBGkKLWbcPgghLVlHtmdHFK1grK9TVfAhpbYOG51kYkkiZ6v07ZVWYtTEz4Ji0XZBjA=w2400');
     width: 100%;
@@ -26,7 +26,7 @@ h1, h2, h3, h4 {
     background-repeat: no-repeat;
     background-size: cover;
     }
-/* ----------- Night Theme -----------*/
+/*---------------------- Night Theme ----------------------*/
 .night-bg-image{
     background-image: url('https://lh3.googleusercontent.com/Eve_d8-q6a-6PFIPgZ7R8I5Hhg1USPTSHX38xmagB4vCbV9hPWBsdRAeb-en962OnCinkayi4he1kvTCPec0Ou9fMhq3IUnO97CxKQ0ybThM2FvmIzjmS0IBM7f24UzsrrRVKFLSGg=w2400');
     width: 100%;
@@ -34,8 +34,8 @@ h1, h2, h3, h4 {
     background-repeat: no-repeat;
     background-size: cover;
 }
+/*---------------------- Side Nav ----------------------*/
 
-/* ----------- Side Nav -----------*/
 /* ----------- Side Nav Credit: 3 -----------*/
 .nav-button{
     position: fixed;
@@ -156,8 +156,9 @@ h1, h2, h3, h4 {
     justify-content: center;
 }
 .welcome-text p{
-    font-size: 20px;
+    font-size: 22px;
     flex: 0 1 100%; 
+    align-self: center;
 }
 
 .welcome-img{
