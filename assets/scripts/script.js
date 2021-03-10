@@ -1,7 +1,7 @@
 $(document).ready(function () {
     $(".suggestions").hide();
 });
-// -------------------- Credit Key: 1. Start --------------------
+// -------------------- Credit Key: 1. Nav Start --------------------
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
     document.getElementById("main").style.marginLeft = "250px";
@@ -14,4 +14,33 @@ function closeNav() {
     document.getElementById("main").style.marginLeft = "0";
     document.body.style.backgroundColor = "white";
 }
-// -------------------- Credit Key: 1. End -------------------- 
+// -------------------- Credit Key: 2. Gallery Start --------------------
+var slideIndex = 1;
+showSlides(slideIndex);
+ 
+// Next/previous controls
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+ 
+// Thumbnail image controls
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+ 
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+}
+// -------------------- Gallery Credit Key: 2. End --------------------
