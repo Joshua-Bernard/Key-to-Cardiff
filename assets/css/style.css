@@ -197,6 +197,7 @@ h1, h2, h3, h4 {
 #map{
     flex: 0 1 60%;
     border: 2px solid #FF9000;
+    height: 70vh;
 }
 
 .key-icon{
