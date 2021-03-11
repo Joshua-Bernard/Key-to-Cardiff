@@ -118,26 +118,32 @@ function initMap() {
         }
     }
 
+    $(".suggestions").hide();
+    $(".suggestions-header").hide();
 
     function key() {
         if ($("#location-button1").hasClass("key-icon-active") && $("#time-button1").hasClass("key-icon-active")) {
             $(".suggestions").hide();
             $("#c-center-day").show();
+            $(".suggestions-header").show();
             clearMarkers();
             $(".result-icon").removeClass("key-icon-active");
         } else if ($("#location-button1").hasClass("key-icon-active") && $("#time-button2").hasClass("key-icon-active")) {
             $(".suggestions").hide();
             $("#c-center-night").show();
+            $(".suggestions-header").show();
             clearMarkers();
             $(".result-icon").removeClass("key-icon-active");
         } else if ($("#location-button2").hasClass("key-icon-active") && $("#time-button1").hasClass("key-icon-active")) {
             $(".suggestions").hide();
             $("#c-bay-day").show();
+            $(".suggestions-header").show();
             clearMarkers();
             $(".result-icon").removeClass("key-icon-active");
         } else if ($("#location-button2").hasClass("key-icon-active") && $("#time-button2").hasClass("key-icon-active")) {
             $(".suggestions").hide();
             $("#c-bay-night").show();
+            $(".suggestions-header").show();
             clearMarkers();
             $(".result-icon").removeClass("key-icon-active");
         }

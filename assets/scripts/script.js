@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $(".suggestions").hide();
+
 });
 // -------------------- Credit Key: 1. Nav Start --------------------
 function openNav() {
