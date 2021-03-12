@@ -17,18 +17,10 @@ body{
 h1, h2, h3, h4 {
     font-family: 'Montserrat', sans-serif;    
 }
-/*---------------------- Day Theme ----------------------*/
 
-.day-bg-image{
-    background-image: url('https://lh3.googleusercontent.com/7-Ke2Y2ctTPyQX8hTHNICEh_nUK6z2xWgDHlJ2540-KarSdWKXc76sniInw79NX35Z5e9hraBGkKLWbcPgghLVlHtmdHFK1grK9TVfAhpbYOG51kYkkiZ6v07ZVWYtTEz4Ji0XZBjA=w2400');
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    }
+
 /*---------------------- Night Theme ----------------------*/
-.night-bg-image{
-    background-image: url('https://lh3.googleusercontent.com/Eve_d8-q6a-6PFIPgZ7R8I5Hhg1USPTSHX38xmagB4vCbV9hPWBsdRAeb-en962OnCinkayi4he1kvTCPec0Ou9fMhq3IUnO97CxKQ0ybThM2FvmIzjmS0IBM7f24UzsrrRVKFLSGg=w2400');
+.bg-image{
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
@@ -64,11 +56,13 @@ h1, h2, h3, h4 {
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 0;
-    background-color: #2E5090; /* Black*/
+    background-color: #2E5090; 
     opacity: 0.8;
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    display: flex;
+    flex-flow: column nowrap;
 }
 
 .nav-icon{
@@ -106,6 +100,9 @@ h1, h2, h3, h4 {
     transition: margin-left .5s;
     padding: 20px;
 }
+.nav-theme-button {
+    text-align: inherit;
+}
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
@@ -126,7 +123,6 @@ h1, h2, h3, h4 {
 .card-bg{
     min-width: 90vw;
     min-height: 90vh;
-    background-color:#38AECCCC;
     padding:25px;
     margin-bottom: 25px;
     display: flex;
@@ -140,12 +136,12 @@ h1, h2, h3, h4 {
     display: flex;
     text-align: center;
 }
+
 .section-header{
     flex: 0 1 100%;
     align-self: flex-start;
     text-align: left;
 }
-
 
 /*---------------------- Welcome Content ----------------------*/
 

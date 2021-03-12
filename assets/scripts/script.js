@@ -51,7 +51,9 @@ $("#btn-theme-toggle").click(function () { // When btn with this class is clicke
 
     if ($("#theme-css-link").attr("href") == "assets/css/light-theme.css") {// If the current URL contains the light theme
         $("#theme-css-link").attr("href", "assets/css/dark-theme.css") // It will procede to change theme to dark theme
+        $("#nav-toggle-status").text("ON")
     } else {
         $("#theme-css-link").attr("href", "assets/css/light-theme.css") //Otherwise it will change to light theme
+        $("#nav-toggle-status").text("OFF")
     }
 });

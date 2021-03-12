@@ -1,0 +1,11 @@
+/*---------------------- Light Theme ----------------------*/
+/* Webpage background */
+.bg-image{
+    background-image: url('https://i.imgur.com/WJmoEJI.jpg');
+}
+
+/* The container for each section */
+
+.card-bg{
+    background-color:#38AECCCC;
+}

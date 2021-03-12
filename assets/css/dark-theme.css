@@ -1,0 +1,11 @@
+/*---------------------- Dark Theme ----------------------*/
+/* Webpage background */
+.bg-image{
+    background-image: url('https://i.imgur.com/0DodGJ8.png');
+}
+
+/* The container for each section */
+
+    .card-bg{
+    background-color:#2E5090CC;
+}
