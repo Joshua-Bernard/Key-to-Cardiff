@@ -47,12 +47,11 @@ function showSlides(n) {
 //-------------------- Light/ Dark mode --------------------
 
 // Listen for a click on the button
-$(".btn-theme-toggle").click(function () { // When btn with this class is clicked
-    
-    if ($("#theme-link").attr("href") == "assets/css/light-theme.css") {// If the current URL contains the light theme
-        // ... then switch it to "dark-theme.css"
-        $("#theme-link").attr("href", "assets/css/dark-theme.css") // It will procede to change theme to dark theme
+$("#btn-theme-toggle").click(function () { // When btn with this class is clicked
+
+    if ($("#theme-css-link").attr("href") == "assets/css/light-theme.css") {// If the current URL contains the light theme
+        $("#theme-css-link").attr("href", "assets/css/dark-theme.css") // It will procede to change theme to dark theme
     } else {
-        $("#theme-link").attr("href", "assets/css/light-theme.css") //Otherwise it will change to light theme
+        $("#theme-css-link").attr("href", "assets/css/light-theme.css") //Otherwise it will change to light theme
     }
 });
