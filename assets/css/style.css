@@ -163,18 +163,18 @@ h1, h2, h3, h4 {
     align-self: center;
 }
  
-.welcome-img{
+.welcome-img-container{
     flex: 0 1 50%;
 }
 
-.welcome-img img{
+.welcome-img-container img{
     width: 100%;
     max-width: 40vw;
     min-width: 200px;
 }
 
 @media screen and (max-width: 768px) {
-    .welcome-img img {
+    .welcome-img-container img {
         min-width: 70vw;
     }
 }

@@ -50,10 +50,42 @@ function showSlides(n) {
 $("#btn-theme-toggle").click(function () { // When btn with this class is clicked
 
     if ($("#theme-css-link").attr("href") == "assets/css/light-theme.css") {// If the current URL contains the light theme
-        $("#theme-css-link").attr("href", "assets/css/dark-theme.css") // It will procede to change theme to dark theme
-        $("#nav-toggle-status").text("ON")
+        darkTheme()// It will procede to change theme to dark theme
+
     } else {
-        $("#theme-css-link").attr("href", "assets/css/light-theme.css") //Otherwise it will change to light theme
-        $("#nav-toggle-status").text("OFF")
+        lightTheme() //Otherwise it will change to light theme
+
     }
 });
+
+function darkTheme() {
+    $("#nav-toggle-status").text("ON");
+    $("#theme-css-link").attr("href", "assets/css/dark-theme.css");
+    $("#welcome-img").attr("src", "https://i.imgur.com/cUhoowO.png");
+    $("#gallery-img-1").attr("src", "https://i.imgur.com/WhlQalJ.jpg");
+    $("#gallery-img-2").attr("src", "https://i.imgur.com/4jAiZ93.jpg");
+    $("#gallery-img-3").attr("src", "https://i.imgur.com/LredMab.jpg");
+    $("#gallery-img-4").attr("src", "https://i.imgur.com/elYWsiQ.jpg");
+    $("#gallery-img-5").attr("src", "https://i.imgur.com/hadVWGe.jpg");
+    $("#gallery-img-6").attr("src", "https://i.imgur.com/hmv36N2.jpg");
+    $("#gallery-img-7").attr("src", "https://i.imgur.com/r8IpefH.jpg");
+    $("#gallery-img-8").attr("src", "https://i.imgur.com/DO2e1t3.png");
+    $("#gallery-img-9").attr("src", "https://i.imgur.com/cp2I8So.jpg");
+    $("#gallery-img-10").attr("src", "https://i.imgur.com/D5r69Lk.jpg");
+}
+
+function lightTheme() {
+    $("#nav-toggle-status").text("OFF");
+    $("#theme-css-link").attr("href", "assets/css/light-theme.css");
+    $("#welcome-img").attr("src", "https://i.imgur.com/mnNoobI.jpg");
+    $("#gallery-img-1").attr("src", "https://i.imgur.com/j9zelrn.jpg");
+    $("#gallery-img-2").attr("src", "https://i.imgur.com/5fAL56I.jpg");
+    $("#gallery-img-3").attr("src", "https://i.imgur.com/cxRKNdc.jpg");
+    $("#gallery-img-4").attr("src", "https://i.imgur.com/fqnJWyb.jpg");
+    $("#gallery-img-5").attr("src", "https://i.imgur.com/DO7sIhp.jpg");
+    $("#gallery-img-6").attr("src", "https://i.imgur.com/6V7DXPz.jpg");
+    $("#gallery-img-7").attr("src", "https://i.imgur.com/GNBy6tk.jpg");
+    $("#gallery-img-8").attr("src", "https://i.imgur.com/BKODw34.jpg");
+    $("#gallery-img-9").attr("src", "https://i.imgur.com/DPhy0OA.png");
+    $("#gallery-img-10").attr("src", "https://i.imgur.com/D5r69Lk.jpg");
+}
