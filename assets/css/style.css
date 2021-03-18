@@ -371,4 +371,35 @@ h1, h2, h3, h4 {
 #event-container {
     justify-content: space-evenly;
 }
-  
+/*---------------------- Contact us Content ----------------------*/
+#contact .content-row {
+    justify-content: space-evenly;
+}
+
+.card-bg-small{
+    background-color: #2E509099;
+}
+
+.contact-info {
+    flex: 0 1 20%;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column wrap;
+}
+
+.contact-form {
+    flex: 0 1 40%;
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    display: flex;
+    flex-flow: column;
+    flex: 0 1 80%;
+    justify-content: center;
+}
+
+.icon{
+    color: #FF9000;
+}

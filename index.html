@@ -19,6 +19,14 @@
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
     <!-- Light/Dark theme stylesheet CSS -->
     <link rel="stylesheet" id="theme-css-link" href="assets/css/light-theme.css" type="text/css">
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_Cw1YtYTxFL148ZrCYa0l6");
+        })();
+    </script>
 </head>
 
 <body class="bg-image">
@@ -196,32 +204,38 @@
                         <!-- Full-width images with number and caption text -->
                         <div class="mySlides fade">
                             <div class="numbertext">1 <span class="punctiuation">/</span> 10</div>
-                            <img id="gallery-img-1" src="assets/images/carousel/bay-leftside-night.png" style="width:100%">
+                            <img id="gallery-img-1" src="assets/images/carousel/bay-leftside-night.png"
+                                style="width:100%">
                         </div>
 
                         <div class="mySlides fade">
                             <div class="numbertext">2 <span class="punctiuation">/</span> 10</div>
-                            <img id="gallery-img-2" src="assets/images/carousel/bay-purple-rightside-night.png" style="width:100%">
+                            <img id="gallery-img-2" src="assets/images/carousel/bay-purple-rightside-night.png"
+                                style="width:100%">
                         </div>
 
                         <div class="mySlides fade">
                             <div class="numbertext">3 <span class="punctiuation">/</span> 10</div>
-                            <img id="gallery-img-3" src="assets/images/carousel/bay-rightside-night.png" style="width:100%">
+                            <img id="gallery-img-3" src="assets/images/carousel/bay-rightside-night.png"
+                                style="width:100%">
                         </div>
 
                         <div class="mySlides fade">
                             <div class="numbertext">4 <span class="punctiuation">/</span> 10</div>
-                            <img id="gallery-img-4" src="assets/images/carousel/cardiff-central-night-l.jpg" style="width:100%">
+                            <img id="gallery-img-4" src="assets/images/carousel/cardiff-central-night-l.jpg"
+                                style="width:100%">
                         </div>
 
                         <div class="mySlides fade">
                             <div class="numbertext">5 <span class="punctiuation">/</span> 10</div>
-                            <img id="gallery-img-5" src="assets/images/carousel/cardiff-square-night.jpg" style="width:100%">
+                            <img id="gallery-img-5" src="assets/images/carousel/cardiff-square-night.jpg"
+                                style="width:100%">
                         </div>
 
                         <div class="mySlides fade">
                             <div class="numbertext">6 <span class="punctiuation">/</span> 10</div>
-                            <img id="gallery-img-6" src="assets/images/carousel/cardiff-taff-night.png" style="width:100%">
+                            <img id="gallery-img-6" src="assets/images/carousel/cardiff-taff-night.png"
+                                style="width:100%">
                         </div>
 
                         <div class="mySlides fade">
@@ -231,7 +245,8 @@
 
                         <div class="mySlides fade">
                             <div class="numbertext">8 <span class="punctiuation">/</span> 10</div>
-                            <img id="gallery-img-8" src="assets/images/carousel/millenium-centre-night.jpg" style="width:100%">
+                            <img id="gallery-img-8" src="assets/images/carousel/millenium-centre-night.jpg"
+                                style="width:100%">
                         </div>
 
                         <div class="mySlides fade">
@@ -241,7 +256,8 @@
 
                         <div class="mySlides fade">
                             <div class="numbertext">10 <span class="punctiuation">/</span> 10</div>
-                            <img id="gallery-img-10" src="assets/images/carousel/stdavids-hotel-night.png" style="width:100%">
+                            <img id="gallery-img-10" src="assets/images/carousel/stdavids-hotel-night.png"
+                                style="width:100%">
                         </div>
                         <!-- Next and previous buttons -->
                         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -370,6 +386,63 @@
         <div class="card-bg">
             <div class="section-header">
                 <h1>Contact Us<span class="punctiuation">.</span></h1>
+                <h3>Have a question<span class="punctiuation">?</span> We<span class="punctiuation">'</span>d love
+                    to hear from you<span class="punctiuation">!</span>
+                    Use the form below to get in touch<span class="punctiuation">.</span></h3>
+            </div>
+            <div class="content-row">
+                <div class="contact-info">
+                    <div class="address-info">
+                        <i class="fas fa-map-marker-alt icon"></i>
+                        <h4>Address</h4>
+                        <p>
+                            Key to cardiff<br>
+                            99 Windser Place <br>
+                            Cardiff <br>
+                            CF99 9CF
+                        </p>
+                    </div>
+                    <div class="phone-info">
+                        <i class="fas fa-phone-alt icon"></i>
+                        <h4>Phone</h4>
+                        <p>029 9496 0407</p>
+                    </div>
+                    <div class="email-info">
+                        <i class="fas fa-envelope icon"></i>
+                        <h4>Email</h4>
+                        <p>b1k.webdevelopment@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-form card-bg-small">
+                    <form onsubmit="return sendMail(this)">
+                        <div class="form-group">
+                            <label for="form-full-name">Full Name</label>
+                            <input id="form-full-name" class="form-control" type="text" name="name"
+                                placeholder="Full Name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="form-email">Email</label>
+                            <input id="form-email" class="form-control" type="email" name="email" placeholder="Email">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="form-subject">Subject</label>
+                            <select id="form-subject" class="form-control" name="subject">
+                                <option>Subject</option>
+                                <option>Adding my buisness to Key to Cardiff</option>
+                                <option>Suggestions</option>
+                                <option>Questions</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-message">Message</label>
+                            <textarea class="form-control" id="message" rows="3"></textarea>
+                        </div>
+                        <button id="form-submit" type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
@@ -380,10 +453,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- External Javascript script -->
     <script src="assets/scripts/script.js"></script>
-    <!-- External Javascript Maps -->
+    <!-- External Javascript Maps  script-->
     <script src="assets/scripts/maps.js"></script>
     <!-- External Javascript Events script -->
     <script src="assets/scripts/events.js"></script>
+        <!-- External Javascript Email script -->
+    <script src="assets/scripts/email.js"></script>
     <!-- Bootstrap JavaScript plugins & Popper -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
