@@ -18,14 +18,6 @@ h1, h2, h3, h4 {
     font-family: 'Montserrat', sans-serif;    
 }
  
- 
-/*---------------------- Night Theme ----------------------*/
-.bg-image{
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 /*---------------------- Side Nav ----------------------*/
  
 /* ----------- Side Nav Credit: 3 -----------*/
@@ -160,6 +152,19 @@ h1, h2, h3, h4 {
     .section-header h1 {
         font-size: 26px;
     }
+}
+
+.bg-image{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.btn-primary:hover {
+    color: #0F192E;
+    background-color: #FF9000;
+    border-color: #0062cc;
 }
 /*---------------------- Welcome Content ----------------------*/
  
@@ -458,9 +463,12 @@ form{
 }
 
 .social-link .fab{
-    color:#FF9000;
-    
+    color:#38AECC;
     font-size: 30px;
     width: 30px;
-    text-decoration: none;
+}
+
+.social-link .fab:hover{
+    color:#FF9000;
+    transition: ease-in-out 0.2s;
 }
