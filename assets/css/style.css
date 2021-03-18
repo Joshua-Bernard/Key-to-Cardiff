@@ -99,9 +99,8 @@ h1, h2, h3, h4 {
 
 #main {
     transition: margin-left .5s;
-    
-    margin: 25px;
-    
+    margin: 10px;
+    padding: 5px;
 }
 .nav-theme-button {
     text-align: inherit;
