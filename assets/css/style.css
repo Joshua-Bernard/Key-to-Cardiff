@@ -6,6 +6,7 @@ html,body {
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
  
 body{
@@ -219,6 +220,7 @@ h1, h2, h3, h4 {
     justify-content: space-around;
 }
  
+
 .key-row{
     flex: 0 1 100%;
     display: flex;
@@ -262,6 +264,7 @@ h1, h2, h3, h4 {
     color: #FF9000;
     border-radius: 50%;
     border: 2px solid #FF9000;
+    transition: ease-in-out 0.2s;
 }
 
   @media screen and (max-width: 425px) {
@@ -280,6 +283,7 @@ h1, h2, h3, h4 {
     color: #2E5090;
     border-radius: 50%;
     border: 2px solid #FF9000;
+    transition: ease-in-out 0.2s;
 }
 
 /*---------------------- Gallery Content ----------------------*/
