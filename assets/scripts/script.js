@@ -20,6 +20,7 @@ $(document).ready(function () {
     showSlides(slideIndex);
 
     // Next/previous controls
+
     function plusSlides(n) {
         showSlides(slideIndex += n);
     }
@@ -44,6 +45,20 @@ $(document).ready(function () {
         slides[slideIndex - 1].style.display = "block";
         dots[slideIndex - 1].className += " active";
     }
+
+    $("#prev-slide").click(function(){ plusSlides(-1) });
+    $("#next-slide").click(function(){ plusSlides(1) });
+    $("#dot-1").click(function(){currentSlide(1)});
+    $("#dot-2").click(function(){currentSlide(2)});
+    $("#dot-3").click(function(){currentSlide(3)});
+    $("#dot-4").click(function(){currentSlide(4)});
+    $("#dot-5").click(function(){currentSlide(5)});
+    $("#dot-6").click(function(){currentSlide(6)});
+    $("#dot-7").click(function(){currentSlide(7)});
+    $("#dot-8").click(function(){currentSlide(8)});
+    $("#dot-9").click(function(){currentSlide(9)});
+    $("#dot-10").click(function(){currentSlide(10)});
+
     // -------------------- Gallery Credit Key: 2. End --------------------
     //-------------------- Light/ Dark mode --------------------
 
