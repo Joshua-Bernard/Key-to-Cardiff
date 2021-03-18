@@ -21,7 +21,7 @@ h1, h2, h3, h4 {
  
 /*---------------------- Side Nav ----------------------*/
 
-/* ----------- Side Nav Credit: 3 -----------*/
+/* ----------- Side Nav Credit: 1 -----------*/
 .nav-button{
     position: fixed;
     top: 0;
@@ -116,6 +116,7 @@ h1, h2, h3, h4 {
         font-size: 18px;
     }
 }
+/* ----------- Side Nav Credit: 1  End -----------*/
 /*---------------------- Main Content/General ----------------------*/
  
 .punctiuation {

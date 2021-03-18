@@ -4,7 +4,7 @@ var eventRequest = new XMLHttpRequest();
 eventRequest.open("GET", "https://app.ticketmaster.com/discovery/v2/events.json?countryCode=GB&city=cardiff&apikey=4jkElgowNHwAgsiK47mBDSoIMyQY15JE", true);
 
 eventRequest.onload = function () {
- 
+
     var ticketMaster = JSON.parse(this.response);   // Accessing JSON data
 
     if (eventRequest.status >= 200 && eventRequest.status < 400) {
@@ -31,7 +31,7 @@ eventRequest.onload = function () {
                 if ((eventGallery.width > 1000) && (eventGallery.ratio = "16_9")) {
                     $(eventImage).attr("src", eventGallery.url);
                     break;
-                } else { 
+                } else {
                     $(eventImage).attr("src", "assets/images/event.jpg");// If there are no images that fit criteria, a default image is displayed.
                 }
             } // end of for loop 
@@ -41,7 +41,7 @@ eventRequest.onload = function () {
         console.log("Ticketmaster API load unsuccessful");
         for (let i = 0; i < 12; i++) {
             $("#event-container").children().hide(); // Hides event section to minimize on screen clutter
-            $("#event-container").html("<p>Event information is currently unavailable<span class='punctiuation'>.</span> Please try again later<span class='punctiuation'>!</span></p>"); 
+            $("#event-container").html("<p>Event information is currently unavailable<span class='punctiuation'>.</span> Please try again later<span class='punctiuation'>!</span></p>");
             // Displays unsuccessful load error message to the user
         }
     }

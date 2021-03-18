@@ -105,11 +105,11 @@ function initMap() {
     $("#location-button1").on("click", function () {
         map.setCenter({ lat: 51.484616839789784, lng: -3.1730485280668694 });
         map.setZoom(13);
-    })
+    });
     $("#location-button2").on("click", function () {
         map.setCenter({ lat: 51.45436859069253, lng: -3.1693038766866364 });
         map.setZoom(14.5);
-    })
+    });
 
     // function to show markers on the map
     function showMarkers(markers) {
