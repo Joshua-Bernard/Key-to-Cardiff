@@ -289,6 +289,14 @@ h1, h2, h3, h4 {
     transition: ease-in-out 0.2s;
 }
 
+  @media screen and (max-width: 425px) {
+    .key-icon-active {
+        height: 40px;
+        width: 40px;
+        font-size: 20px;
+    }
+}
+
 /*---------------------- Gallery Content ----------------------*/
  
 /* ----------- Gallery Credit: -----------*/
