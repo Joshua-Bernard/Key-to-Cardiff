@@ -6,6 +6,7 @@ $(document).ready(function () {
         document.getElementById("mySidenav").style.width = "250px";
         document.getElementById("main").style.marginLeft = "250px";
         document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        $(".logo").hide();
     }
 
     // Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white 
@@ -13,6 +14,7 @@ $(document).ready(function () {
         document.getElementById("mySidenav").style.width = "0";
         document.getElementById("main").style.marginLeft = "10px";
         document.body.style.backgroundColor = "white";
+        $(".logo").show();
     }
     $("#close-nav").click(function () { closeNav(); });
     $("#open-nav").click(function () { openNav(); });
