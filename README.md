@@ -5,7 +5,7 @@ The purpose of the website is to promote my city, the city of Cardiff and what i
 
 ![Responsiveness](https://i.imgur.com/5JKhHUD.png?1)
 
-You can view the live website [here](https://jblk99.github.io/Key-to-Cardiff/index.html)
+You can view the live website [here](https://joshua-bernard.github.io/Key-to-Cardiff/)
 
 # User Experiance (UX)
 
