@@ -2,7 +2,7 @@ $("#unsuccessful-msg").hide();
 $("#successful-msg").hide();
 
 function sendMail(contactForm) {
-    emailjs.send("gmail", "key-to-cardiff", {
+    emailjs.send("key-to-cardiff", "key-to-cardiff-template", {
         "from_name": contactForm.name.value,
         "from_email": contactForm.email.value,
         "subject": contactForm.subject.value,
