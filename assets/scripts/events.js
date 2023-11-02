@@ -1,7 +1,7 @@
 // --------------------Event Start --------------------
 var eventRequest = new XMLHttpRequest();
 
-eventRequest.open("GET", "https://app.ticketmaster.com/discovery/v2/events.json?countryCode=GB&city=cardiff&apikey=4jkElgowNHwAgsiK47mBDSoIMyQY15JE", true);
+eventRequest.open("GET", "https://app.ticketmaster.com/discovery/v2/events.json?countryCode=GB&city=cardiff&apikey=YhwwYCxHCgy0bdYh94mON3oSCQgJeqfg", true);
 
 eventRequest.onload = function () {
 
@@ -9,6 +9,7 @@ eventRequest.onload = function () {
 
     if (eventRequest.status >= 200 && eventRequest.status < 400) {
         console.log("Ticketmaster API loaded Successfully");// Accessing JSON data
+        console.log(this.response);
 
         for (let i = 0; i < 12; i++) {
             const eventData = ticketMaster._embedded.events[i];
